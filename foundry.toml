@@ -1,0 +1,8 @@
+[profile.default]
+solc = "0.8.20"
+src = 'contracts'
+out = 'out'
+libs = ['lib']
+gas_reports = []
+fs_permissions = [{ access = "read-write", path = "./"}]
+

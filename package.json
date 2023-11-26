@@ -1,0 +1,19 @@
+{
+  "name": "common-lib",
+  "version": "1.0.0",
+  "description": "common lib for mercury contract protocols",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merttic/common-lib.git"
+  },
+  "author": "mertticc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merttic/common-lib/issues"
+  },
+  "homepage": "https://github.com/merttic/common-lib#readme"
+}
