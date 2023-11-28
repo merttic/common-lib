@@ -17,24 +17,6 @@ abstract contract ERC1155Base is ERC1155Upgradeable, AccessControlManager, Reent
         __ReentrancyGuard_init();
     }
 
-    /**
-     * @dev See {ERC1155-_beforeTokenTransfer}.
-     *
-     * Requirements:
-     *
-     * - the contract must not be paused.
-     */
-    function _beforeTokenTransfer(
-        address operator,
-        address from,
-        address to,
-        uint256[] memory ids,
-        uint256[] memory amounts,
-        bytes memory data
-    ) internal virtual override {
-        super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
-    }
-
     function burn(address account, uint256 id, uint256 value) public virtual {
         require(account == _msgSender() || isGovernor(), "ERC1155: caller is not token owner nor approved");
 
